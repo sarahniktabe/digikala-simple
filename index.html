@@ -1,12 +1,1308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DigiKala</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
+    <!--Header-->
+    <div class="container-none border-b border-gray-400">
+
+        <!--Top Banner-->
+        <div class="flex items-center justify-center">
+            <img src="Images/Top Banner/top-banner.jpg" alt="Request">
+        </div>
+
+        <!--Flex Container for all items-->
+        <div class="flex items-center justify-between pt-3 mx-7 text-center">
+
+            <!--Logo-->
+            <div class="flex-none items-center justify-auto">
+                <img src="Images/Logo/logo.svg" alt="Logo" />
+            </div>
+
+            <!--search-->
+            <div class="flex-auto px-5">
+                <div class="flex justify-start border-b w-[40rem] bg-gray-200 rounded-md">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 text-gray-400 duration-200 hover:scale-110"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                        </svg>
+                    </button>
+                    <input type="text"
+                        class="m-2 border-none bg-gray-200 placeholder:font-thin focus:outline-none rounded-md"
+                        placeholder="جستجو " />
+                </div>
+            </div>
+
+            <!--Button-->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-center border-l">
+                    <button
+                        class="text-lg font-normal text-gray-300 px-8 py-1 m-2 border border-gray-400 rounded-md duration-200">
+                        ورود
+                    </button>
+                </div>
+                <div class="flex items-center justify-center m-2 w-8 h-8">
+                    <img src="Images/Shop logo/wishlist-icon.jpg" alt="shop">
+                </div>
+            </div>
+        </div>
+
+
+        <!--menu-->
+        <div class="flex justify-between items-center mt-5 mb-3 mx-7 text-gray-500 font-normal text-sm">
+
+            <div class="flex items-center justify-start">
+
+                <!--right menu-->
+                <div class="flex items-center">
+                    <div class="group">
+                        <a href="#">دسته‌بندی کالاها</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                </div>
+
+                <!--between menu-->
+                <div class="flex items-center p-2 mx-3 h-4 gap-6 border-l border-r border-gray-300">
+                    <div class="group">
+                        <a href="#">شگفت انگیزها</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">تخفیف‌ها و پیشنهادها</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">پرفروش‌ترین‌ها</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">سوپرمارکت</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                </div>
+
+                <!--right menu-->
+                <div class="flex items-center text-sm gap-6">
+                    <div class="group">
+                        <a href="#">در دیجیکالا چی بفروشید؟</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">سوالی دارید؟</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-red-600"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--location-->
+            <div class="flex items-center justify-end mx-6 text-sm text-gray-500">
+                لطفا شهر خود را انتخاب کنید
+            </div>
+        </div>
+
+    </div>
+
+    <!--First Slider-->
+    <div class="container-none">
+        <div class="flex">
+
+            <div class="swiper-slider" id="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Images/slider/slide-01.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/slider/slide-02.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/slider/slide-03.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/slider/slider-04.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/slider/slide-05.jpg" />
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--After Fist slider-->
+    <div class="container mx-auto mt-10 max-w-6xl">
+        <div class="flex items-center justify-between space-y-3">
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/1.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700"> دی جی کالا جت</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/2.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700">حراج استالین</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/3.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700">خرید اقساطی</p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/4.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700"> کارت هدیه</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/5.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700">خرید سرماه</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/6.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700">از نو بهار</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/After gallery/7.png" alt="" class="w-14 h-14 rounded-xl">
+                <p class="text-center py-2 text-xs text-gray-700">خرید عمده و سازمانی</p>
+            </div>
+
+
+            <div class="flex flex-col pt-2 items-center justify-center">
+                <img src="images/After gallery/8.jpg" alt="" class="w-14 h-14 rounded-full">
+                <p class="text-center pt-3 py-2 text-xs text-gray-700">بیشتر</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Second slider-->
+    <!-- Slider -->
+  <div class="container-none max-w-7xl mx-auto mt-12">
+    <div class="flex items-center p-3 pr-0 bg-[#ef394e] rounded-xl">
+        <!-- Swiper2 -->
+        <div class="swiper-suggested" id="swiper2">
+            <div class="swiper-wrapper">
+                <!--First-->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center mr-5 ml-2">
+                        <div class="flex items-center">
+                            <img src="images/slider 2/Amazings.svg" alt="">
+                        </div>
+                        <div class="flex items-center">
+                            <img src="images/slider 2/box.png" alt="">
+                        </div>
+                        <div class="flex items-center justify-center text-white">
+                            مشاهده همه
+                        </div>
+                    </div>
+                </div>
+                <!--second-->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-between bg-white">
+                        <div class="flex relative items-center justify-center">
+                            <img src="images/slider 2/2.webp" alt="" class="rounded-l">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-end">
+                                <p class="flex text-black-600">تومان</p>
+                            </div>
     
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-between">
+                        <div class="flex relative items-center justify-center">
+                            <img src="images/slider 2/3.webp" alt="" class="rounded-l">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-end">
+                                <p class="flex text-black-600">تومان</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-between">
+                        <div class="flex relative items-center justify-center">
+                            <img src="images/slider 2/4.webp" alt="" class="rounded-l">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-end">
+                                <p class="flex text-black-600">تومان</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-between">
+                        <div class="flex relative items-center justify-center">
+                            <img src="images/slider 2/5.webp" alt="" class="rounded-l">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-end">
+                                <p class="flex text-black-600">تومان</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-between">
+                        <div class="flex relative items-center justify-center">
+                            <img src="images/slider 2/6.webp" alt="" class="rounded-l">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-end">
+                                <p class="flex text-black-600">تومان</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><div class="flex flex-col items-center justify-between">
+                    <div class="flex relative items-center justify-center">
+                        <img src="images/slider 2/7.webp" alt="" class="rounded-l">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-end">
+                            <p class="flex text-black-600">تومان</p>
+                        </div>
+
+                    </div>
+                </div></div>
+                <div class="swiper-slide"><div class="flex flex-col items-center justify-between">
+                    <div class="flex relative items-center justify-center">
+                        <img src="images/slider 2/7.webp" alt="" class="rounded-l">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-end">
+                            <p class="flex text-black-600">تومان</p>
+                        </div>
+
+                    </div>
+                </div></div>
+                <div class="swiper-slide"><div class="flex flex-col items-center justify-between">
+                    <div class="flex relative items-center justify-center">
+                        <img src="images/slider 2/7.webp" alt="" class="rounded-l">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-end">
+                            <p class="flex text-black-600">تومان</p>
+                        </div>
+
+                    </div>
+                </div></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+
+</div>
+
+
+    <!--After second slider-->
+
+    <div class="container-none mt-5 max-w-7xl mx-auto">
+        <div class="flex items-center justify-between bg-gray-200 rounded-xl h-28">
+            <div class="flex items-center justify-center pr-10">
+                <div class="flex items-center justify-center">
+                    <img src="images/after second gallery/fresh.png" alt="">
+                </div>
+                <div class="flex items-center justify-center mx-5">
+                    <img src="images/after second gallery/fresh.svg" alt="">
+                </div>
+                <div class="flex items-center justify-center px-5 py-1 mr-3 bg-[#39ae00]
+                 text-white font-normal text-sm rounded-xl">تا 41% تخفیف</div>
+            </div>
+
+            <div class="flex items-center justify-between gap-4">
+                <div class="flex items-center justify-center relative w-14 h-14">
+                    <img src="images/after second gallery/1.webp" alt="" class="rounded-full">
+                    <div class="flex absolute top-10 left-8 w-[2rem] p-1 bg-red-600 rounded-full text-white text-xs">10%
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center relative w-14 h-14">
+                    <img src="images/after second gallery/2.webp" alt="" class="rounded-full">
+                    <div class="flex absolute top-10 left-8 w-[2rem] p-1 bg-red-600 rounded-full
+                      text-white text-xs">40%</div>
+                </div>
+
+                <div class="flex items-center justify-center relative w-14 h-14">
+                    <img src="images/after second gallery/3.webp" alt="" class="rounded-full">
+                    <div class="flex absolute top-10 left-8 w-[2rem] p-1 bg-red-600 rounded-full
+                      text-white text-xs">20%</div>
+                </div>
+
+                <div class="flex items-center justify-center relative w-14 h-14">
+                    <img src="images/after second gallery/4.webp" alt="" class="rounded-full">
+                    <div class="flex absolute top-10 left-8 w-[2rem] p-1 bg-red-600 rounded-full
+                      text-white text-xs">25%</div>
+                </div>
+
+                <div class="flex items-center justify-center relative w-14 h-14">
+                    <img src="images/after second gallery/5.webp" alt="" class="rounded-full">
+                    <div class="flex absolute top-10 left-8 w-[2rem] p-1 bg-red-600 rounded-full
+                      text-white text-xs">45%</div>
+                </div>
+
+
+                <div class="flex items-center justify-center relative w-14 h-14">
+                    <img src="images/after second gallery/6.webp" alt="" class="rounded-full">
+                    <div class="flex absolute top-10 left-8 w-[2rem] p-1 bg-red-600 rounded-full
+                      text-white text-xs">90%</div>
+                </div>
+
+                <div class="flex-auto ml-12 mr-2 px-6 py-3 bg-white text-sm text-[#39ae00] rounded-3xl">بیش از 90 کالا->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Banner-->
+    <div class="container-none max-w-7xl mx-auto mt-6">
+
+        <div class="flex items-center justify-between">
+
+            <div class="flex items-center h-full w-[100%]">
+                <img src="images/Banner/1.jpg" alt="" class="rounded-2xl">
+            </div>
+
+
+            <div class="flex items-center mr-16 h-full w-[100%]">
+                <img src="images/Banner/2.jpg" alt="" class="rounded-2xl">
+            </div>
+
+            <div class="flex items-center mr-16 h-full w-[100%]">
+                <img src="images/Banner/3.jpg" alt="" class="rounded-2xl">
+            </div>
+
+            <div class="flex items-center mr-16 h-full w-[100%]">
+                <img src="images/Banner/4.jpg" alt="" class="rounded-2xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- Collection -->
+    <div class="container-none mt-12 section-collection">
+        <div class="flex items-center justify-center mt-12">
+            <p class="text-xl font-bold text-black">دسته‌ بندی‌ های دیجی‌کالا</p>
+        </div>
+
+        <div class="flex items-center justify-between gap-5 mt-6 max-w-6xl mx-auto">
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/Tools.webp" alt="">
+                <p class="text-black text-sm">خودرو، ابزار و تجهیزات صنعتی</p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/headphone.webp" alt="">
+                <p class="text-black text-sm">کالای دیجیتال</p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/fation.webp" alt="">
+                <p class="text-black text-sm">مد و پوشاک </p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/mobile.webp" alt="">
+                <p class="text-black text-sm">موبایل</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/food.webp" alt="">
+                <p class="text-black text-sm">کالای سوپرمارکتی</p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/traditional.webp" alt="">
+                <p class="text-black text-sm">محصولات بومی</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-between gap-5 mt-12 max-w-5xl mx-auto">
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/toys.webp" alt="">
+                <p class="text-black text-sm"> اسباب بازی</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/beauty.webp" alt="">
+                <p class="text-black text-sm">زیبایی</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/Kitchen.webp" alt="">
+                <p class="text-black text-sm"> لوازم آشپزخانه</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/Stationery.webp" alt="">
+                <p class="text-black text-sm">لوازم التحریر</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <img src="images/Collection/sports.webp" alt="">
+                <p class="text-black text-sm">ورزش</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Banner 2-->
+    <div class="container-none mt-12 max-w-7xl mx-auto">
+        <div class="flex items-center justify-between gap-6">
+
+            <div class="flex items-center justify-center">
+                <img src="images/Banner 2/banner-Right.jpg" alt="" class="rounded-xl">
+            </div>
+
+            <div class="flex items-center justify-center">
+                <img src="images/Banner 2/banner-Left.jpg" alt="" class="rounded-xl">
+            </div>
+        </div>
+    </div>
+
+    <!--Suggestions-->
+    <div class="flex items-center justify-center">
+        <p class="text-center text-2xl text-black mt-10 mb-8">
+            پیشنهاد دیجی کالا
+        </p>
+    </div>
+
+    <div class="container-none mt-3 p-3 max-w-7xl mx-auto"> 
+        <div class="flex border border-200 border-gray-300 rounded-xl">
+            <div class="flex-auto grid grid-cols-7 divide-x">
+                <div class="flex flex-col border-l">
+                    <div class="flex flex-col items-center justify-center p-2 border-b">
+                        <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28">
+                            <img src="Images/suggestion/watch.png" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <p class="text-black text-sm text-center">
+                                ساعت هوشمند
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center p-2">
+                        <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28">
+                            <img src="Images/suggestion/headphone.png" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <p class="text-black text-sm text-center">
+                                هدفن و هد ست و ....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="flex flex-col">
+                    <div class="flex flex-col items-center justify-center p-2 border-b">
+                    <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                        <img src="Images/suggestion/mobile.jpg" class="w-16 h-16">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="text-black text-sm text-center">
+                            ساعت هوشمند
+                        </p>
+                    </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-2">
+                        <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                            <img src="Images/suggestion/mobile2.png" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <p class="text-black text-sm text-center">
+                                هدفن و هد ست و ....
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    
+
+                    <div class="flex flex-col">
+                        <div class="flex flex-col items-center justify-center p-2 border-b">
+                        <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                            <img src="Images/suggestion/mobile.jpg" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <p class="text-black text-sm text-center">
+                                ساعت هوشمند
+                            </p>
+                        </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center p-2">
+                            <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                                <img src="Images/suggestion/mobile2.png" class="w-16 h-16">
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <p class="text-black text-sm text-center">
+                                    هدفن و هد ست و ....
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col items-center justify-center p-2 border-b">
+                            <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                                <img src="Images/suggestion/mobile.jpg" class="w-16 h-16">
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <p class="text-black text-sm text-center">
+                                    ساعت هوشمند
+                                </p>
+                            </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-center p-2">
+                                <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                                    <img src="Images/suggestion/mobile2.png" class="w-16 h-16">
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <p class="text-black text-sm text-center">
+                                        هدفن و هد ست و ....
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <div class="flex flex-col items-center justify-center p-2 border-b">
+                                <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                                    <img src="Images/suggestion/mobile.jpg" class="w-16 h-16">
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <p class="text-black text-sm text-center">
+                                        ساعت هوشمند
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="flex flex-col items-center justify-center p-2">
+                                    <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                                        <img src="Images/suggestion/mobile2.png" class="w-16 h-16">
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <p class="text-black text-sm text-center">
+                                            هدفن و هد ست و ....
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+
+                               <div class="flex flex-col">
+                    <div class="flex flex-col items-center justify-center p-2 border-b">
+                    <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                        <img src="Images/suggestion/mobile.jpg" class="w-16 h-16">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="text-black text-sm text-center">
+                            ساعت هوشمند
+                        </p>
+                    </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-2">
+                        <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                            <img src="Images/suggestion/mobile2.png" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <p class="text-black text-sm text-center">
+                                هدفن و هد ست و ....
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col items-center justify-center p-2 border-b">
+                        <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                            <img src="Images/suggestion/mobile.jpg" class="w-16 h-16">
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <p class="text-black text-sm text-center">
+                                ساعت هوشمند
+                            </p>
+                        </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center p-2">
+                            <div class="flex items-center justify-center bg-slate-200 rounded-full w-28 h-28 ">
+                                <img src="Images/suggestion/mobile2.png" class="w-16 h-16">
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <p class="text-black text-sm text-center">
+                                    هدفن و هد ست و ....
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                
+                
+               </div>
+        </div>
+        </div>
+        
+    <!--slider 3-->
+    
+
+
+        <!--banafsh-->
+
+<div class="container-none max-w-7xl mx-auto mt-12 bg-[#941b80] rounded-2xl">
+    <div class="flex flex-row justify-between p-2 mt-4 pt-6 mx-4">
+        <div class="flex pt-2 mb-6 min-w-[400px] bg-[url('Images/forooshe_fori/plus-widget.png')] bg-contain bg-no-repeat bg-[center_5rem]">
+            <div class="flex flex-col pr-6 items-start justify-start">
+                <div class="flex">
+                    <img src="Images/forooshe_fori/digiplus-logo.svg" alt="">
+                </div>
+                <div class="flex pt-5">
+                    <p class="text-white text-md">خدمات ویژه برای اعضای دیجی‌پلاس</p>
+                </div>
+                        <div class="flex pt-5 ">
+                            <button
+                                class="items-center text-lg font-normal text-white py-1 px-3 border border-white rounded-md
+                             duration-200">
+                                عضویت ->
+                            </button>
+                      </div>
+                </div>
+            </div>
+            <div class="flex py-4 px-3 mx-5 my-5 bg-white justify-between rounded-2xl">
+                <div class="flex flex-col ">
+                   <div class="flex justify-between">
+                       <div class="flex items-start justify-start">
+                           <p class="text-black-700 text-sm ">ارسال فوری</p>
+                       </div>
+                       <div class="flex items-end justify-end">
+                           <a href="#"><p class="text-black-700 text-sm">
+                               مشاهده همه
+                           </p></a>
+                       </div>
+                   </div>
+                   <div class="flex">
+                    <div class="grid grid-cols-6 gap-3">
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                            <img src="Images/forooshe_fori/4.jpg" alt="">
+                        </div>
+                    </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/8.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/9.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-center p-2">
+                                <img src="Images/forooshe_fori/11.jpg" alt="">
+                            </div>
+                        </div>
+                       
+                    </div>
+                   </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--your favorite-->
+
+    <div class="container-none max-w-7xl mx-auto mt-12 border border-200 border-gray-200 rounded-2xl">
+        <div class="flex items-center justify-between">
+            <div class="flex flex-col p-2 border-l">
+                <div class="flex flex-col px-5 py-2">
+                    <div class="flex justify-start">
+                        <h4 class="text-black text-lg">
+                            گوشی موبایل
+                        </h4>
+                    </div>
+                    <p class="text-black text-xs text-gray-400 mt-2">
+                        بر اساس بازدیدهای شما
+                    </p>
+                </div>
+                <div class="flex flex-col mx-3 my-5">
+                    <div class="flex">
+                        <div class="flex border-l border-b justify-center items-center">
+                            <img src="Images/grid/1/mobile1.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center border-b">
+                            <img src="Images/grid/1/mobile2.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex justify-center items-center border-l">
+                            <img src="Images/grid/1/mobile3.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="Images/grid/1/mobile4.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                    
+                </div>
+                <flex class="items-center justify-center">
+                    <p class="text-[#19bfd3] text-center">مشاهده</p>
+                </flex>
+            </div>
+    
+
+            <div class="flex flex-col p-2 border-l">
+                <div class="flex flex-col px-5 py-2">
+                    <div class="flex justify-start">
+                        <h4 class="text-black text-lg">
+                            کیف و کاور گوشی            
+                        </h4>
+                    </div>
+                    <p class="text-black text-xs text-gray-400 mt-2">
+                        بر اساس بازدیدهای شما
+                    </p>
+                </div>
+                <div class="flex flex-col mx-3 my-5">
+                    <div class="flex">
+                        <div class="flex border-l border-b justify-center items-center">
+                            <img src="Images/grid/2/1.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center border-b">
+                            <img src="Images/grid/2/2.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex justify-center items-center border-l">
+                            <img src="Images/grid/2/3.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="Images/grid/2/4.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                    
+                </div>
+                <flex class="items-center justify-center">
+                    <p class="text-[#19bfd3] text-center">مشاهده</p>
+                </flex>
+            </div>
+
+            <div class="flex flex-col p-2 border-l">
+                <div class="flex flex-col px-5 py-2">
+                    <div class="flex justify-start">
+                        <h4 class="text-black text-lg">
+                            هدفون، هدست و هندزفری  
+                        </h4>
+                    </div>
+                    <p class="text-black text-xs text-gray-400 mt-2">
+                        بر اساس بازدیدهای شما
+                    </p>
+                </div>
+                <div class="flex flex-col mx-3 my-5">
+                    <div class="flex">
+                        <div class="flex border-l border-b justify-center items-center">
+                            <img src="Images/grid/3/1.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center border-b">
+                            <img src="Images/grid/3/2.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex justify-center items-center border-l">
+                            <img src="Images/grid/3/3.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="Images/grid/3/4.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                </div>
+                <flex class="items-center justify-center">
+                    <p class="text-[#19bfd3] text-center">مشاهده</p>
+                </flex>
+            </div>
+            
+
+            <div class="flex flex-col p-2">
+                <div class="flex flex-col px-5 py-2">
+                    <div class="flex justify-start">
+                        <h4 class="text-black text-lg">
+                            گوشی موبایل
+                        </h4>
+                    </div>
+                    <p class="text-black text-xs text-gray-400 mt-2">
+                        بر اساس بازدیدهای شما
+                    </p>
+                </div>
+                <div class="flex flex-col mx-3 my-5">
+                    <div class="flex">
+                        <div class="flex border-l border-b justify-center items-center">
+                            <img src="Images/grid/4/1.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center border-b">
+                            <img src="Images/grid/4/2.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex justify-center items-center border-l">
+                            <img src="Images/grid/4/3.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="Images/grid/4/4.jpg" alt="" class="h-62 w-62 p-2">
+                        </div>
+                    </div>
+                </div>
+                <flex class="items-center justify-center">
+                    <p class="text-[#19bfd3] text-center">مشاهده</p>
+                </flex>
+            </div>
+
+
+
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<!--after your favorite-->
+<div class="container-none max-w-7xl mt-5 mx-auto bg-gradient-to-l from-[#007295] to-[#35a6c8] h-24 rounded-2xl">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center justify-center my-6 mr-8">
+            <img src="Images/after your favorite/digiclub-logo-white.svg" alt="">
+        </div>
+<div class="flex items-center justify-between">
+    <div class="flex justify-between mx-3 bg-white h-16 w-64 rounded-lg">
+        <div class="flex items-center justify-start">
+            <p class="items-center justify-start py-3 text-xs text-black-500 text-center pr-6">
+            چرخ و بخت
+        </p>
+    </div>
+    <div class="flex justify-end">
+        <img src="Images/after your favorite/wheel-spinner.jpg" alt="" class="rounded-l-lg">
+    </div>
+    </div>
+    <div class="flex justify-between mx-3 bg-white h-16 w-64 rounded-lg">
+        <div class="flex items-center justify-start">
+            <p class="items-center justify-start py-3 text-xs text-black-500 text-center pr-6">
+            ماموریت ها
+        </p>
+    </div>
+    <div class="flex justify-end">
+        <img src="Images/after your favorite/missions.png" alt="" class="rounded-l-lg">
+    </div>
+    </div>
+    <div class="flex justify-between mx-3 bg-white h-16 w-56 rounded-lg">
+        <div class="flex items-center justify-start">
+            <p class="items-center justify-start py-3 text-xs text-black-500 text-center pr-6">
+                جایزه ها
+        </p>
+    </div>
+    <div class="flex justify-end">
+        <img src="Images/after your favorite/awards.png" alt="" class="rounded-l-lg">
+    </div>
+    </div>
+    
+</div>
+    </div>
+</div>
+
+<!--Footer-->
+<div class="container-none w-full border-t mt-5">
+    <div class="flex-auto">
+        <div class="flex items-center justify-between my-14 mx-5">
+            <div class="flex flex-col justify-start">
+                <img src="Images/footer/digi-logo.svg" alt="">
+            </div>
+            <div class="flex justify-end">
+                <button class="py-2 px-4 border text-gray-300 text-center rounded-lg" >بازگشت به بالا</button>
+            </div>
+        </div>
+        <div class="flex pt-0 mt-0">
+            <div class="flex border-l border-200 border-gray-300 pl-7 mx-5">
+                <p class="text-sm text-black">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+            </div>
+            <div class="flex">
+                <p class="text-sm text-black">
+                    ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+            </div>
+            </div>
+<div class="container-none max-w-7xl mx-auto mt-16">
+    <div class="flex items-center justify-between gap-5">
+        <div class="flex flex-col items-center justify-cente">
+        <div class="flex">
+            <img src="Images/footer/pardakht/express-delivery.svg" alt="">
+        </div>
+        <div class="flex">
+            <p class="text-xs">
+                اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس
+            </p>
+        </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-cente">
+            <div class="flex">
+                <img src="Images/footer/pardakht/cash-on-delivery.svg" alt="">
+            </div>
+            <div class="flex">
+                <p class="text-xs">
+                    اﻣﮑﺎن پرداخت در محل 
+                </p>
+            </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-cente">
+                <div class="flex">
+                    <img src="Images/footer/pardakht/support.svg" alt="">
+                </div>
+                <div class="flex">
+                    <p class="text-xs">
+                        ۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ
+                    </p>
+                </div>
+                </div>
+
+                <div class="flex flex-col items-center justify-cente">
+                    <div class="flex">
+                        <img src="Images/footer/pardakht/days-return.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <p class="text-xs">
+                            هفت روز ضمانت بازگشت کالا 
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-cente">
+                        <div class="flex">
+                            <img src="Images/footer/pardakht/original-products.svg" alt="">
+                        </div>
+                        <div class="flex">
+                            <p class="text-xs">
+                                ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ
+                            </p>
+                        </div>
+                        </div>
+                    </div>     
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<div class="flex flex-row items-center justify-between mr-6 mt-10 ">
+
+
+    <div class="flex justify-cente flex-col">
+        <div class="flex">
+            <h2 class="text-black-600 font-bold">با دیجی‌کالا</h2>
+        </div>
+        <div class="flex-col my-2">
+<p class="text-md text-gray-600">اتاق خبر دیجی‌کالا</p>
+        </div>
+        <div class="flex-col my-2">
+            <p class="text-md text-gray-600">فروش در دیجی‌کالا</p>
+                    </div>
+                    <div class="flex-col my-2">
+                        <p class="text-md text-gray-600">فرصت‌های شغلی</p>
+                    </div> 
+                    
+                    <div class="flex-col my-2">
+                        <p class="text-md text-gray-600">گزارش تخلف در دیجی‌کالا</p>
+                                </div>
+                                <div class="flex-col my-2">
+                                    <p class="text-md text-gray-600">تماس با دیجی‌کالا</p>
+                                            </div>
+                                            <div class="flex-col my-2">
+                                                <p class="text-md text-gray-600">درباره دیجی‌کالا</p>
+                                                        </div>
+                </div>
+
+
+    <div class="flex justify-center flex-col">
+        <div class="flex">
+            <h2 class="text-black-600 font-bold">خدمات مشتریان</h2>
+        </div>
+        <div class="flex-col my-2">
+<p class="text-md text-gray-600"> پاسخ به پرسش‌های متداول</p>
+        </div>
+        <div class="flex-col my-2">
+<p class="text-md text-gray-600">رویه‌های بازگرداندن کالا</p>
+                    </div>
+<div class="flex-col my-2">
+     <p class="text-md text-gray-600">شرایط استفاده</p>
+                    </div> 
+<div class="flex-col my-2">
+ <p class="text-md text-gray-600">حریم خصوصی</p>
+                                </div>
+ <div class="flex-col my-2">
+<p class="text-md text-gray-600">گزارش باگ</p>
+                                            </div>
+             
+    </div>
+
+    
+    <div class="flex justify-center flex-col">
+        <div class="flex">
+            <h2 class="text-black-600 font-bold">راهنمای خرید از دیجی‌کالا </h2>
+        </div>
+        <div class="flex-col my-2">
+<p class="text-md text-gray-600"> نحوه ثبت سفارش</p>
+        </div>
+        <div class="flex-col my-2">
+<p class="text-md text-gray-600">رویه‌های بازگرداندن کالا</p>
+                    </div>
+<div class="flex-col my-2">
+     <p class="text-md text-gray-600">رویه ارسال سفارش</p>
+                    </div> 
+<div class="flex-col my-2">
+ <p class="text-md text-gray-600"> شیوه ی پرداخت</p>
+                                </div>
+                                </div>
+
+
+    <div class="flex flex-col justify-end">
+        <div class="flex">
+            <h2 class="text-black-600 font-bold">همراه ما باشید</h2>
+        </div>
+<div class="flex mt-2">
+    <div class="flex ml-8">
+        <img src="Images/footer/icons/instagram.svg" alt="" class="h-10 w-10">
+    </div>
+    <div class="flex ml-8">
+        <img src="Images/footer/icons/twitter.svg" alt="" class="h-10 w-10">
+    </div>
+    <div class="flex ml-8">
+        <img src="Images/footer/icons/linkedin.svg" alt="" class="h-10 w-10">
+    </div>
+    <div class="flex ml-8">
+        <img src="Images/footer/icons/aparat.svg" alt="" class="h-10 w-10">
+    </div>
+</div>
+<div class="flex">
+    <p class="text-md text-gray-600 mt-3 ml-3">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</p>
+</div>
+<div class="flex mt-3">
+    <div class="flex justify-start ml-4">
+        <input type="text" class="bg-gray-200 rounded-md placeholder:font-normal focus:outline-none rounded-md py-2 pl-8 pr-2" placeholder=" ایمیل شما">
+    </div>
+<div class="flex justify-end">
+    <button class="py-2 px-3 border bg-gray-200 text-white text-center rounded-lg">
+ثبت  
+    </button>
+</div>
+</div>
+
+</div>
+</div>
+
+    <div class="container max-w-7xl mt-20 mx-auto bg-[#3c4b6d] h-20 rounded-md">
+        <div class="flex items-center justify-between">
+            <div class="flex justify-between">
+                <div class="flex justify-center my-3 mx-2">
+                    <img src="Images/footer/apps/footerlogo2.png" alt="" class="w-14 h-14">
+                </div>
+                <div class="flex justify-center my-5 mx-2">
+                    <h1 class="text-white text-2xl">دانلود اپلیکیشن دیجی‌کالا
+                    </h1>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+       <div class="flex justify-center mx-3 rounded-lg">
+         <img src="Images/footer/apps/google-play.svg" alt="">
+     </div>
+     <div class="flex justify-center mx-3 rounded-lg">
+        <img src="Images/footer/apps/sib-app.svg" alt="">
+    </div>
+    <div class="flex justify-center mx-3 rounded-lg">
+        <img src="Images/footer/apps/coffe-bazzar.svg" alt="">
+    </div>
+    <div class="flex justify-center mx-3 rounded-lg">
+        <img src="Images/footer/apps/myket.svg" alt="">
+    </div>
+    <div class="flex justify-center bg-white w-10 h-10 mx-3 rounded-md">
+        <img src="Images/footer/apps/More.svg" alt="">
+    </div>
+            </div>
+        </div>
+        </div>
+
+
+  <div class="contair-none border-t border-b mt-5">
+                <div class="flex justify-between ">
+                    <div class="flex flex-col justify-center mt-8">
+                        <div class="flex">
+                            <h1 class="text-black-400 text-xl mr-5">
+                                فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+                
+                            </h1>
+                        </div>
+                        <div class="flex mt-3 mx-4">
+                            <p class="text-sm">
+                                یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-8 mx-16 gap-2 mb-10">
+                        <div class="flex border rounded-md w-28 h-28 p-3">
+                            <img src="Images/footer/dargah/rezi.png" alt="">
+                        </div>
+                        <div class="flex border rounded-md w-28 h-28 p-3">
+                            <img src="Images/footer/dargah/kasbokar.png" alt="">
+                        </div>
+                        <div class="flex border rounded-md w-28 h-28 p-3">
+                            <img src="Images/footer/dargah/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+
+        
+<div class="flex my-12 items-center justify-center">
+    <p class="text-xs">
+        برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+    </p>
+</div>
+        
+        
+<div class="flex flex-col">
+        <div class="flex grid grid-cols-8">
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digiclub.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digiexpress.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digify.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digikala-business.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digimag.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digiMehr.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/diginext.svg" alt="" class="w-24 h-20">
+            </div>
+            <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                <img src="Images/footer/brands/digipay.svg" alt="" class="w-24 h-20">
+            </div>
+    </div>
+    
+            <div class="flex grid grid-cols-9">
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/digiplus.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/digistyle.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/fidibo.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/ganjeh.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/jet.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/komodaa.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/magnet.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/pindo.svg" alt="" class="w-24 h-20">
+                </div>
+                <div class="flex bg-gray-200 border border-gray-300 h-20 w-48 px-8 py-1 ">
+                    <img src="Images/footer/brands/smartech.svg" alt="" class="w-24 h-20">
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
